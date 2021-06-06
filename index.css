@@ -1,0 +1,97 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: hsl(233, 47%, 7%);
+    text-align: justify;
+    color: hsl(0, 0%, 100%);
+    font-family: 'Inter',sans-serif,'Lexend Deca',sans-serif;
+
+}
+.container{
+    background: hsl(244, 38%, 16%);
+    width: 70%;
+    display: flex;
+    overflow: hidden;
+    border-radius: 8px;
+}
+p{
+    color: hsla(0, 0%, 100%, 0.75);
+}
+h1{
+    color: hsl(0, 0%, 100%);
+}
+span{
+    color: hsl(277, 64%, 61%);
+}
+.un{
+    width: 50%;
+    padding: 48px;
+}
+.un h1{
+    margin-bottom: 24px;
+}
+.text{
+    font-weight: 100;
+    margin-bottom: 62px;
+}
+.ON h1{
+    margin-bottom: 0px;
+    font-weight: 700;
+    font-size: 24px;
+}
+.TOO h1{
+    margin-bottom: 0px;
+    font-weight: 700;
+    font-size: 24px;
+}
+.TRI h1{
+    margin-bottom: 0px;
+    font-weight: 700;
+    font-size: 24px;
+}
+.deux{
+    background-image: url(image-header-desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgb(137, 74, 177);
+    background-blend-mode: multiply;
+    width: 50%;
+}
+.cont2{
+    display: grid;
+    grid-auto-flow: column;
+}
+.cont2 p ,h1{
+    margin: 0px;
+    padding: 0px;
+}
+div{
+    margin: 0px;
+    padding: 0px;
+}
+
+@media (max-width:800px){
+    .container{
+        flex-direction: column-reverse;
+        width: 90%;
+    }
+    .un{
+        text-align: center;
+        padding: 32px;
+        width: 100%;
+    }
+    .deux{
+        background-image: url(image-header-mobile.jpg);
+        height: 300px;
+        width: 100%;
+    }
+    .cont2{
+        display: grid;
+        grid-auto-flow: row;
+    }
+}
